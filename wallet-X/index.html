@@ -1,0 +1,66 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>WalletX</title>
+
+    <!-- ✅ CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Configuración opcional de Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: {
+                800: '#1f1f1f',
+                900: '#111111',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          'fade-in': 'fadeIn 0.8s ease-out forwards',
+          'fade-in-down': 'fadeInDown 1s ease-out forwards',
+          'fade-in-up': 'fadeInUp 1s ease-out forwards',
+        },
+        keyframes: {
+          fadeIn: {
+            '0%': { opacity: '0' },
+            '100%': { opacity: '1' },
+          },
+          fadeInDown: {
+            '0%': { opacity: '0', transform: 'translateY(-10px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+          fadeInUp: {
+            '0%': { opacity: '0', transform: 'translateY(10px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+        },
+      },
+    },
+  };
+</script>
+
+
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <!-- ✅ Punto de montaje de React -->
+    <div id="root"></div>
+
+    <!-- ✅ Script de entrada (Vite) -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

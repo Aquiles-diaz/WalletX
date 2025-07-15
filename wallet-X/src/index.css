@@ -1,0 +1,35 @@
+html, body, #root {
+  font-family: 'Space Grotesk', sans-serif;
+  height: 100%;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.walletx-3d {
+  font-weight: 800;
+  background: linear-gradient(270deg, #00fff7, #00c2ff, #00ff94);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: gradientShift 6s ease infinite;
+
+  /* 3D */
+  text-shadow:
+    1px 1px 0 #191919,
+    2px 2px 1px rgba(24, 103, 82, 0.2),
+    3px 3px 1px rgba(0, 0, 0, 0.2),
+    4px 4px 1px rgba(10, 35, 105, 0.15);
+
+  transform: perspective(1000px) rotateX(6deg) rotateY(-5deg);
+}
