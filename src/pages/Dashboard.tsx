@@ -24,10 +24,11 @@ const Dashboard = () => {
       {/* Fondo animado tipo partículas */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-cyan-900 via-black to-black opacity-30 animate-pulse" />
 
-      {/* Título */}
-      <h1 className="relative z-10 text-5xl md:text-6xl font-extrabold tracking-wide text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-green-300 drop-shadow-[0_2px_2px_rgba(0,255,255,0.3)] animate-text-glow">
-        WALLETX Dashboard
-      </h1>
+     <h1 className="text-5xl md:text-6xl font-extrabold text-center mb-4 bg-gradient-to-r from-cyan-400 via-teal-300 to-green-300 text-transparent bg-clip-text drop-shadow-lg">
+  WALLETX Dashboard
+</h1>
+
+
 
       {/* Resumen del presupuesto */}
       <section className="relative z-10 w-full max-w-md">
